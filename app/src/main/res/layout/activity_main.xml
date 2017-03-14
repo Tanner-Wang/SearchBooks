@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.searchbooks.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/screen_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_layout_height"
+            android:layout_marginLeft="@dimen/simple_paddingAndMargin"
+            android:layout_marginRight="@dimen/simple_paddingAndMargin"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/enter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/simple_paddingAndMargin"
+                android:layout_weight="1"
+                android:hint="@string/editText_hint" />
+
+
+            <TextView
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+
+                android:padding="@dimen/simple_paddingAndMargin"
+                android:text="@string/searchButton_text"
+                android:textSize="@dimen/searchButton_textSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="true"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</ScrollView>
