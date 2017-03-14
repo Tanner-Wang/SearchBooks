@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_view_padding">6dp</dimen>
+    <dimen name="title_textSize">26sp</dimen>
+    <dimen name="descriptionAndAuthor_textSize">20sp</dimen>
+    <dimen name="simple_paddingAndMargin">4dp</dimen>
+    <dimen name="author_layout_width">88dp</dimen>
+    <dimen name="editText_layout_height">58dp</dimen>
+    <dimen name="searchButton_textSize">26dp</dimen>
+</resources>
