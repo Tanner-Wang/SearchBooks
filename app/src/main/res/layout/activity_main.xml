@@ -14,15 +14,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
+            android:drawSelectorOnTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/screen_image" />
+            android:src="@drawable/search_book" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/editText_layout_height"
-            android:layout_marginLeft="@dimen/simple_paddingAndMargin"
-            android:layout_marginRight="@dimen/simple_paddingAndMargin"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/layout_standard_padding"
+            android:paddingRight="@dimen/layout_standard_padding">
 
             <EditText
                 android:id="@+id/enter"
@@ -38,8 +39,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
+                android:drawSelectorOnTop="true"
                 android:gravity="center"
-
                 android:padding="@dimen/simple_paddingAndMargin"
                 android:text="@string/searchButton_text"
                 android:textSize="@dimen/searchButton_textSize"

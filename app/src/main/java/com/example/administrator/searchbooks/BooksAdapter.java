@@ -9,9 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Administrator on 2017/3/12.
- */
+import static com.example.administrator.searchbooks.MainActivity.holder;
 
 public class BooksAdapter extends ArrayAdapter<Book> {
 
@@ -30,14 +28,14 @@ public class BooksAdapter extends ArrayAdapter<Book> {
 
         final Book currentBook = getItem(position);
 
-        TextView title = (TextView) convertView.findViewById(R.id.title);
-        title.setText(currentBook.getBookName());
+        holder.title = (TextView) convertView.findViewById(R.id.title);
+        holder.title.setText(currentBook.getBookName());
 
-        TextView description = (TextView) convertView.findViewById(R.id.description);
-        description.setText(currentBook.getDescription());
+        holder.description = (TextView) convertView.findViewById(R.id.description);
+        holder.description.setText(currentBook.getDescription());
 
-        TextView author = (TextView) convertView.findViewById(R.id.author);
-        author.setText(currentBook.getAuthor());
+        holder.author = (TextView) convertView.findViewById(R.id.author);
+        holder.author.setText(currentBook.getAuthor());
 
         return convertView;
 

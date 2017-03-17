@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="layout_standard_padding">16dp</dimen>
     <dimen name="list_view_padding">6dp</dimen>
     <dimen name="title_textSize">26sp</dimen>
     <dimen name="descriptionAndAuthor_textSize">20sp</dimen>
